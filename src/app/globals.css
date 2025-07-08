@@ -236,7 +236,7 @@ body {
   transition: all 0.3s ease;
   letter-spacing: 2px;
   text-align: center;
-  margin-left: 10.5rem;
+  margin-left: 5.5rem;
 }
 .contact-button:hover {
   transform: scale(1.125);
