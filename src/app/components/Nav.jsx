@@ -10,7 +10,7 @@ const Nav = () => {
   const [hovered, setHovered] = useState(null); // 👈 track hover
 
   const navItems = [
-    { label: "#", section: "home" },
+    { label: "Home", section: "home" },
     { label: "About", section: "about" },
     { label: "Tech Stack", section: "tech" },
     { label: "Projects", section: "projects" },
