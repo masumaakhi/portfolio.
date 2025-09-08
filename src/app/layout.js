@@ -70,13 +70,20 @@ export const metadata = {
     google: 'your-google-verification-code',
   },
 };
-
 import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import PerformanceMonitor from "./components/PerformanceMonitor";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="antialiased">
+        <PerformanceMonitor />
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
