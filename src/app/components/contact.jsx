@@ -49,7 +49,7 @@
 'use client';
 import React, { useState } from 'react';
 
-const ContactForm = () => {
+const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
@@ -128,4 +128,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Contact;

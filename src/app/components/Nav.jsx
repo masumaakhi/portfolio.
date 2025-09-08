@@ -10,7 +10,7 @@ const Nav = () => {
   const [hovered, setHovered] = useState(null); // 👈 track hover
 
   const navItems = [
-    { label: "Home", section: "home" },
+    { label: "Home", section: "" },
     { label: "About", section: "about" },
     { label: "Tech Stack", section: "tech" },
     { label: "Projects", section: "projects" },
@@ -22,7 +22,7 @@ const Nav = () => {
       <div className="max-w-[83rem] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="text-xl font-bold">
-          <Image  src={assets.logo3} alt="logo" width={90} height={90} />
+          <Link href={"/"}><Image  src={assets.logo3} alt="logo" width={90} height={90} /></Link>
         </div>
 
         {/* Desktop Menu */}

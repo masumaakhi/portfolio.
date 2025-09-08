@@ -1,5 +1,5 @@
 import React from 'react'
-import { Laptop2, DatabaseZap, Puzzle, Webhook } from "lucide-react";
+import { Laptop2, DatabaseZap, Puzzle, Webhook, GraduationCap, Palette } from "lucide-react";
 
 const skills = [
   {
@@ -20,7 +20,17 @@ const skills = [
   {
     title: "Tools & Platforms",
     icon: <Webhook size={32} />,
-    items: ["Git & GitHub", "VS Code", "Vercel", "Netlify", "Render", "Postman (API Testing)",  "Firebase Hosting"],
+    items: ["Git & GitHub", "VS Code", "Vercel", "Render", "Postman (API Testing)","Netlify",  "Firebase Hosting"],
+  },
+    {
+    title: "Relevant Coursework",
+    icon: <GraduationCap size={32} />,
+    items: ["Algorithms", "Operating Systems", "OOP", "DBMS","System Design", "Software Architecture"],
+  },
+    {
+    title: "Soft Skills",
+    icon: <Palette size={32} />,
+    items: ["Problem Solving", "Collaboration", "Adaptability", "Self-learning", "Time Management", "Leadership"],
   }
 ];
 
@@ -31,7 +41,7 @@ const Techstack = () => {
       <h2 className="text-4xl font-bold mb-12 text-center">
         Technical Expertise
       </h2>
-     <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-3 md:grid-cols-2 gap-8"> 
+     <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-3 md:grid-cols-2 gap-8"> 
         {skills.map((skill, index) => (
           <div
             key={index}

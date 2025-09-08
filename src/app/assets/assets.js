@@ -1,3 +1,5 @@
+//src/app/assets/assets.js
+
 import logo1 from './logo1.png'
 import logo2 from './logo2.png'
 import photo from './photo.png'

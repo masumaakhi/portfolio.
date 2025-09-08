@@ -1,7 +1,7 @@
+// src/app/components/Projects.jsx
 import ProjectCard from "./ProjectCard";
-import p1 from "../assets/p1.jpg";
-import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
+import Link from "next/link";
+import projects from "../data/projects"; // ✅ FIXED
 
 export default function Projects() {
   return (
@@ -9,28 +9,18 @@ export default function Projects() {
       <h1 className="text-center text-white text-4xl font-bold mb-10">My Projects</h1>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ProjectCard
-          image={p1}
-          title="E-Commerce Website"
-          description="A food recipe app where users can browse, search, and submit recipes."
-          tasks={["React", "Firebase", "HTML", "CSS", "TailwindCSS"]}
-        />
+        {projects.slice(0, 3).map((p, i) => (
+          <ProjectCard key={i} {...p} />
+        ))}
+      </div>
 
-        <ProjectCard
-          image={p2}
-          title="Portfolio Website"
-          viewLink="https://your-portfolio-site.com"
-          githubLink="https://github.com/your-username/portfolio-project"
-          description="Personal portfolio showcasing my skills, projects and contact info."
-          tasks={["Next.js", "TailwindCSS", "Responsive Design"]}
-        />
-
-        <ProjectCard
-          image={p3}
-          title="Portfolio Website"
-          description="Personal portfolio showcasing my skills, projects and contact info."
-          tasks={["Next.js", "TailwindCSS", "Responsive Design"]}
-        />
+      <div className="flex justify-center mt-10">
+        <Link
+          href="/projects"
+          className="px-6 py-3 rounded-[22px] bg-blue-400 text-white font-medium hover:bg-blue-700 transition"
+        >
+          See More →
+        </Link>
       </div>
     </div>
   );

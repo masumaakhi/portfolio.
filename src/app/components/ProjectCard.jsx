@@ -1,3 +1,5 @@
+//src/app/components/ProjectCard.jsx
+
 import Image from "next/image";
 
 const ProjectCard = ({ image, title, description, tasks, viewLink, githubLink }) => {
@@ -8,9 +10,14 @@ const ProjectCard = ({ image, title, description, tasks, viewLink, githubLink })
       <div className="w-full h-[570px] relative">
         <Image
           src={image}
-          alt={title}
-          layout="responsive"
+          alt={`${title} - Project Screenshot`}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-contain border-b-2 border-slate-700"
+          quality={85}
+          loading="lazy"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
         />
       </div>
 

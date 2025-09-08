@@ -15,7 +15,15 @@ const About = () => {
     <div className="space-y-6">
   {/** Front-End Development */}
   <div className="flex items-center gap-4 bg-slate-700 p-6 rounded-lg shadow-md hover:bg-slate-600 hover:shadow-lg transition-shadow duration-300">
-    <Image src={assets.s1} alt="App Design" className="w-14 h-14 rounded" />
+    <Image 
+      src={assets.s1} 
+      alt="Frontend Development - React, Next.js, JavaScript" 
+      width={56}
+      height={56}
+      className="w-14 h-14 rounded"
+      quality={85}
+      loading="lazy"
+    />
     <div className='flex flex-col items-start'>
       <h3 className="text-xl font-semibold">Front-End Development</h3>
       <p className="text-gray-400 text-sm text-start">
@@ -37,7 +45,15 @@ const About = () => {
 
   {/** System Analysis and Documentation */}
   <div className="flex items-center gap-4 bg-slate-700 p-6 rounded-lg shadow-md hover:bg-slate-600 hover:shadow-lg transition-shadow duration-300">
-    <Image src={assets.s1} alt="App Design" className="w-14 h-14 rounded" />
+    <Image 
+      src={assets.s1} 
+      alt="System Analysis and Documentation - SRS, Use Cases, Process Models" 
+      width={56}
+      height={56}
+      className="w-14 h-14 rounded"
+      quality={85}
+      loading="lazy"
+    />
     <div className='flex flex-col items-start justify-start'>
       <h3 className="text-xl font-semibold">System Analysis and Documentation</h3>
       <p className="text-gray-400 text-sm text-start">
