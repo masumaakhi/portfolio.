@@ -13,7 +13,7 @@ const ProjectCard = ({ image, title, description, tasks, viewLink, githubLink })
           alt={`${title} - Project Screenshot`}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          className="object-contain border-b-2 border-slate-700"
+          className="object-cover object-center border-b-2 border-slate-700"
           quality={85}
           loading="lazy"
           placeholder="blur"

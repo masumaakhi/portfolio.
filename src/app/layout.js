@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://your-domain.com',
+    url: 'https://masuma-portfolio-website.netlify.app',
     title: 'Masuma Akter Akhi - Frontend Developer & Web Developer',
     description: 'Experienced Frontend Developer specializing in React, Next.js, and modern web technologies. Creating responsive, user-centric web applications.',
     siteName: 'Masuma Akter Akhi Portfolio',
@@ -51,7 +51,7 @@ export const metadata = {
     title: 'Masuma Akter Akhi - Frontend Developer & Web Developer',
     description: 'Experienced Frontend Developer specializing in React, Next.js, and modern web technologies.',
     images: ['/og-image.jpg'],
-    creator: '@Masumaakhi12',
+    creator: '@Masumaakhi',
   },
   icons: {
     icon: [
